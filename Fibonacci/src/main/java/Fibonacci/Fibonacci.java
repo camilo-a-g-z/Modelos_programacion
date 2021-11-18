@@ -1,9 +1,4 @@
 package Fibonacci;
-/*
-* Programa: Programa que calcula la serie de fibonacci
-* Autor: Camilo Andres Garcia Zambrano
-* Fecha: 20/11/2020
-* */
 
 public class Fibonacci {
 	//se declaran atributos
