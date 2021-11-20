@@ -11,4 +11,4 @@
 En este repositorio se encuentra un código sencillo que pretende reflejar el buen uso de algunos de los principios de diseño 
 
 
-![Diagrama de clases](./Actividad \principios/Docente/Diagrama.jpeg)
+![Diagrama de clases](./"Actividad principios"/Docente/Diagrama.jpeg)
