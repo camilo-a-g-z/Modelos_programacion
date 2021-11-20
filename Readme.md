@@ -10,7 +10,7 @@
 
 
 
-- [Principios de diseño](#Principios de diseño)
+- [Principios de diseño](#Principios-de-diseño)
 
 
 # Principios de diseño
