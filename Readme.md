@@ -8,7 +8,7 @@
 - [Proyecto 1: Principios de diseño](#Principios-de-diseño)
 
 # Principios de diseño
-En este repositorio se encuentra un código sencillo que pretende reflejar el buen uso de algunos de los principios de diseño más comunes, entre los cuales se encuentran los siguientes:
+En este repositorio se encuentra un código sencillo, con su respectivo diagrama de clases, donde se pretende reflejar el buen uso de algunos de los principios de diseño más comunes, entre los cuales se encuentran los siguientes:
 
 1. Principio de responsabilidad simple.
 1. Principio KISS, Keep it Simple and Stupid.
@@ -16,5 +16,6 @@ En este repositorio se encuentra un código sencillo que pretende reflejar el bu
 1. Principio de sustitución de Liskov
 1. Principio del menor conocimiento, Ley de Demeter.
 
+[Codigo del repositorio!](./Actividad_principios/Docente)
 
 ![Diagrama de clases](./Actividad_principios/Docente/Diagrama.jpeg)
