@@ -1,14 +1,20 @@
-# Modelos de programación |
+# Modelos de programación I
 
 ## Estudiantes
 1. Laura Andrea Riobueno Rincón - 20201020040.
 1. Camilo Andres Garcia Zambrano - 20201020047.
 
 # Proyectos
-- [Principios de diseño](#Principios-de-diseño)
+- [Proyecto 1: Principios de diseño](#Principios-de-diseño)
 
 # Principios de diseño
-En este repositorio se encuentra un código sencillo que pretende reflejar el buen uso de algunos de los principios de diseño 
+En este repositorio se encuentra un código sencillo que pretende reflejar el buen uso de algunos de los principios de diseño más comunes, entre los cuales se encuentran los siguientes:
+
+1. Principio de responsabilidad simple.
+1. Principio KISS, Keep it Simple and Stupid.
+1. Principio abierto-cerrado.
+1. Principio de sustitución de Liskov
+1. Principio del menor conocimiento, Ley de Demeter.
 
 
 ![Diagrama de clases](./Actividad_principios/Docente/Diagrama.jpeg)
