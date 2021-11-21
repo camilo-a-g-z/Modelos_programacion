@@ -17,5 +17,5 @@ En este repositorio se encuentra un código sencillo, con su respectivo diagrama
 1. Principio del menor conocimiento, Ley de Demeter.
 
 [Codigo del repositorio!](./Actividad_principios/Docente)
-
+**Diagrama de clases**
 ![Diagrama de clases](./Actividad_principios/Docente/Diagrama.jpeg)
