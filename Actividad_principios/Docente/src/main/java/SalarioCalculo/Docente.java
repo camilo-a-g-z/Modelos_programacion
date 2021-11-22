@@ -32,11 +32,11 @@ public class Docente {
 		do {
 			//se pregunta tipo de contratacion
 			System.out.println("");
-			System.out.println("Tipo de contratacion: 1)Docente de planta\t2)Vinculaci�n especial\t3)Catedratico");
+			System.out.println("Tipo de contratacion: 1)Docente de planta\t2)Vinculación especial\t3)Catedratico");
 			System.out.println("Opcion: ");
 			opcion = entrada.nextInt();
 			if(opcion>3||opcion<1) {
-				System.out.println("Opcion invalida.");
+				System.out.println("Opción invalida.");
 			}
 		}while(opcion>3||opcion<1);
 		//se crea switch para generar salario

@@ -27,6 +27,8 @@ public class Salario_P {
 			Docente[] docentes = new Docente[cantidad_docentes];
 			//bucle para registrar docentes
 			for(int i=0;i<cantidad_docentes;i++) {
+                                //Se indica en que docente va
+                                System.out.println("Docente "+(i+1));
 				//bucle para vvalidar tipo de dato
 				do {
 					//se pregunta nivel de estudio
