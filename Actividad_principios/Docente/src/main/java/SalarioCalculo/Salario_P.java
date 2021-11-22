@@ -27,51 +27,51 @@ public class Salario_P {
 			Docente[] docentes = new Docente[cantidad_docentes];
 			//bucle para registrar docentes
 			for(int i=0;i<cantidad_docentes;i++) {
-                                //Se indica en que docente va
-                                System.out.println("Docente "+(i+1));
-				//bucle para vvalidar tipo de dato
-				do {
-					//se pregunta nivel de estudio
-					System.out.println("");
-					System.out.println("Nivel de estudio: 1)Doctorado\t2)Maestria\t3)Espesialisaci�n\t4)Sin postgrado");
-					System.out.println("Opcion: ");
-					opcion = Integer.parseInt(in.readLine());
-					if(opcion>4||opcion<1) {
-						System.out.println("Opcion invalida.");
-					}
-				}while(opcion>4||opcion<1);
-				//se calcula segun opcion
-				switch (opcion) {
-				case 1:
-					//se crea nuevo docente
-					Docente docente_d = new Doctorado();
-					//se pasa el nuevo docente al arreglo
-					docentes[i] = docente_d;
-					break;
-				case 2:
-					//se crea nuevo docente
-					Docente docente_m = new Maestria();
-					//se pasa el nuevo docente al arreglo
-					docentes[i] = docente_m;
-					break;
-				case 3:
-					//se crea nuevo docente
-					Docente docente_e = new Espesializacion();
-					//se pasa el nuevo docente al arreglo
-					docentes[i] = docente_e;
-					break;
-				case 4:
-					//se crea nuevo docente
-					Docente docente_s_p = new S_Postgrado();
-					//se pasa el nuevo docente al arreglo
-					docentes[i] = docente_s_p;
-					break;
-				}
-				//se piden datos
-				docentes[i].pedir_datos();
-				//se pregunta tip de contratacion
-				docentes[i].tipo_contratacion();
-				salario_t += docentes[i].getSalario();
+                            //Se indica en que docente va
+                            System.out.println("Docente "+(i+1));
+                            //bucle para vvalidar tipo de dato
+                            do {
+                                    //se pregunta nivel de estudio
+                                    System.out.println("");
+                                    System.out.println("Nivel de estudio: 1)Doctorado\t2)Maestria\t3)Espesialisaci�n\t4)Sin postgrado");
+                                    System.out.println("Opcion: ");
+                                    opcion = Integer.parseInt(in.readLine());
+                                    if(opcion>4||opcion<1) {
+                                            System.out.println("Opcion invalida.");
+                                    }
+                            }while(opcion>4||opcion<1);
+                            //se calcula segun opcion
+                            switch (opcion) {
+                            case 1:
+                                    //se crea nuevo docente
+                                    Docente docente_d = new Doctorado();
+                                    //se pasa el nuevo docente al arreglo
+                                    docentes[i] = docente_d;
+                                    break;
+                            case 2:
+                                    //se crea nuevo docente
+                                    Docente docente_m = new Maestria();
+                                    //se pasa el nuevo docente al arreglo
+                                    docentes[i] = docente_m;
+                                    break;
+                            case 3:
+                                    //se crea nuevo docente
+                                    Docente docente_e = new Espesializacion();
+                                    //se pasa el nuevo docente al arreglo
+                                    docentes[i] = docente_e;
+                                    break;
+                            case 4:
+                                    //se crea nuevo docente
+                                    Docente docente_s_p = new S_Postgrado();
+                                    //se pasa el nuevo docente al arreglo
+                                    docentes[i] = docente_s_p;
+                                    break;
+                            }
+                            //se piden datos
+                            docentes[i].pedir_datos();
+                            //se pregunta tip de contratacion
+                            docentes[i].tipo_contratacion();
+                            salario_t += docentes[i].getSalario();
 			}
 			System.out.println("");
 			System.out.println("Mostrando informacion de docentes:");
