@@ -8,7 +8,7 @@ Todos los proyectos alojados en este repositorio estan realizados con el IDE Net
 1. Camilo Andres Garcia Zambrano - 20201020047.
 
 # Proyectos
-- [Proyecto 1: Principios de diseño](#Principios-de-diseño)
+- [Proyecto 1: Principios de diseño](./Actividad_principios/Docente)
 
 # Principios de diseño
 En este repositorio se encuentra un código sencillo, con su respectivo diagrama de clases, donde se pretende reflejar el buen uso de algunos de los principios de diseño más comunes, entre los cuales se encuentran los siguientes:
