@@ -14,7 +14,9 @@ public class Salario_P {
         boolean comprobar = true;
         String desicion = "";
         do {
-            //se crea objeto para pedir, almacenar y mostrar datos
+            /**
+             * @param ped objeto que permite recolectar los datos y enseñarlos al usuario
+             */
             Pedir_datos ped = new Pedir_datos();
             ped.entrar_datos();
             ped.mostrar_datos();
