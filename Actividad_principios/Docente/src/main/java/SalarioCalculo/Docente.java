@@ -1,5 +1,9 @@
 package SalarioCalculo;
-
+/*
+    @author Camilo Andres Garcia Zambrano
+    Clase padre de tipos de docente usada como modelo de las demas clases
+    @version 20/11/2021
+*/
 import java.util.Scanner;
 
 public class Docente {

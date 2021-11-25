@@ -1,14 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    @author Camilo Andres Garcia Zambrano
+    Clase hija de docente en la que se seetea el salario
+    @version 20/11/2021
+*/
 package SalarioCalculo;
 
-/**
- *
- * @author User
- */
 public class Espesializacion extends Docente{
 	//se crea constructor con salario
 	Espesializacion(){

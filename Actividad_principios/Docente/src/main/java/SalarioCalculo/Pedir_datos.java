@@ -2,10 +2,11 @@ package SalarioCalculo;
 
 import java.util.Scanner;
 
-/**
- *
- * @author User
- */
+/*
+    @author Camilo Andres Garcia Zambrano
+    Clase emplementada para pedir y almacenar los datos que provienen del usuario
+    @version 20/11/2021
+*/
 public class Pedir_datos {
     private Double salario_t = 0.0;
     private Docente[] docentes;

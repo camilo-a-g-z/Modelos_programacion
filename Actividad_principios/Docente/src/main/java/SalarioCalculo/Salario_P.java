@@ -1,7 +1,11 @@
 package SalarioCalculo;
 
 import java.util.Scanner;
-
+/*
+    @author Camilo Andres Garcia Zambrano
+    Clase que posee el main o ejecucion del proyecto
+    @version 20/11/2021
+*/
 public class Salario_P {
     public static void main(String[] arg){
         System.out.println("Bienvenido al programa que calcula salario de docente.\n");
