@@ -9,4 +9,4 @@ En este repositorio se encuentra un código sencillo, con su respectivo diagrama
 
 **Diagrama de clases**
 
-![Diagrama de clases](UML SalarioCalculo.jpeg)
+![Diagrama de clases](UMLSalarioCalculo.jpeg)
