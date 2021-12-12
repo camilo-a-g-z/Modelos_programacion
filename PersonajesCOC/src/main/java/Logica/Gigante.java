@@ -6,14 +6,14 @@ package Logica;
  */
 public class Gigante extends Personaje{
     //se genera gigante con datos aelatorios
-    public Gigante(String nombre, int edad) {
-        super(nombre, "Masculino", edad, "Noble", null, null);
+    public Gigante(String nombre) {
+        super(nombre, "Masculino", "Noble", null, null);
         this.arma = randomArma();
         this.est = randomEstadisticas();
         setId_tipo_p(4);
     }
     //se genera arma aelatoria
-    Arma randomArma(){
+    public Arma randomArma(){
         Arma arma = new Arma();
         switch ((int)(Math. random()*2+1)){
             case 1:
@@ -26,7 +26,7 @@ public class Gigante extends Personaje{
         return arma;
     }
     //se generan estadisticas aelatoriamente
-    Estadisticas randomEstadisticas(){
+    public Estadisticas randomEstadisticas(){
         Estadisticas est;
         est = new Estadisticas(String.valueOf((int)(Math. random()*100+1)),
                 String.valueOf((int)(Math. random()*10+1)),String.valueOf((int)(Math. random()*50+1))

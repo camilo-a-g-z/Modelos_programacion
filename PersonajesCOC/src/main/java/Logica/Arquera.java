@@ -6,14 +6,14 @@ package Logica;
  */
 public class Arquera extends Personaje{
     //Constructor de arquera con datos aelatorios
-    public Arquera(String nombre, int edad) {
-        super(nombre, "Femenino", edad, "Audaz", null, null);
+    public Arquera(String nombre) {
+        super(nombre, "Femenino", "Audaz", null, null);
         this.arma = randomArma();
         this.est = randomEstadisticas();
         setId_tipo_p(1);
     }
     //generador de armas aelatorias
-    Arma randomArma(){
+    public Arma randomArma(){
         Arma arma = new Arma();
         switch ((int)(Math. random()*3+1)){
             case 1:
@@ -29,7 +29,7 @@ public class Arquera extends Personaje{
         return arma;
     }
     //generador de estadisticas aelatorios
-    Estadisticas randomEstadisticas(){
+    public Estadisticas randomEstadisticas(){
         Estadisticas est;
         est = new Estadisticas(String.valueOf((int)(Math. random()*50+1)),
                 String.valueOf((int)(Math. random()*100+1)),"0",String.valueOf((int)(Math. random()*50+1)));

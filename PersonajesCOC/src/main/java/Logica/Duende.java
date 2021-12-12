@@ -6,8 +6,8 @@ package Logica;
  */
 public class Duende extends Personaje{
     //se crea duende con datos aelatorios
-    public Duende(String nombre, int edad) {
-        super(nombre, "", edad, "Impulsivo", null, null);
+    public Duende(String nombre) {
+        super(nombre, "", "Impulsivo", null, null);
         this.arma = randomArma();
         this.est = randomEstadisticas();
         this.genero = randomGenero();
@@ -24,7 +24,7 @@ public class Duende extends Personaje{
         return null;
     }
     //se genera arma aelatoria
-    Arma randomArma(){
+    public Arma randomArma(){
         Arma arma = new Arma();
         switch ((int)(Math. random()*3+1)){
             case 1:
@@ -40,7 +40,7 @@ public class Duende extends Personaje{
         return arma;
     }
     //se generan estadististicas aelatorias
-    Estadisticas randomEstadisticas(){
+    public Estadisticas randomEstadisticas(){
         Estadisticas est;
         est = new Estadisticas(String.valueOf((int)(Math. random()*40+1)),
                 String.valueOf((int)(Math. random()*100+1)),String.valueOf((int)(Math. random()*70+1))

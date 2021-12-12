@@ -6,14 +6,14 @@ package Logica;
  */
 public class Barbaro extends Personaje{
     //se crea bararo aelatoriamente
-    public Barbaro(String nombre, int edad) {
-        super(nombre, "Masculino", edad, "Agresiva", null, null);
+    public Barbaro(String nombre) {
+        super(nombre, "Masculino", "Agresiva", null, null);
         this.arma = randomArma();
         this.est = randomEstadisticas();
         setId_tipo_p(2);
     }
     //se crea arma aelatoriamente
-    Arma randomArma(){
+    public Arma randomArma(){
         Arma arma = new Arma();
         switch ((int)(Math. random()*3+1)){
             case 1:
@@ -32,7 +32,7 @@ public class Barbaro extends Personaje{
         return arma;
     }
     //se crean estadisticas aelatoriamente
-    Estadisticas randomEstadisticas(){
+    public Estadisticas randomEstadisticas(){
         Estadisticas est;
         est = new Estadisticas(String.valueOf((int)(Math. random()*100+1)),
                 String.valueOf((int)(Math. random()*100+1)),"0",String.valueOf((int)(Math. random()*50+1)));

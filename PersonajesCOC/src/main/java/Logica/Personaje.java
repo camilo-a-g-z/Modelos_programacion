@@ -4,12 +4,11 @@ package Logica;
  *
  * @author User
  */
-public class Personaje {
-    protected String nombre;
+public abstract class Personaje {
+    private String nombre;
     protected int id_personaje;
     protected int id_tipo_p;
     protected String genero;
-    protected int edad;
     protected String personalidad;
     protected Arma arma;
     protected Estadisticas est;
@@ -17,14 +16,15 @@ public class Personaje {
     public Personaje() {
     }
     //constructor para ingresar datos manualmente
-    public Personaje(String nombre, String genero, int edad, String personalidad, Arma arma, Estadisticas est) {
+    public Personaje(String nombre, String genero, String personalidad, Arma arma, Estadisticas est) {
         this.nombre = nombre;
         this.genero = genero;
-        this.edad = edad;
         this.personalidad = personalidad;
         this.arma = arma;
         this.est = est;
     }
+    public abstract Arma randomArma();
+    public abstract Estadisticas randomEstadisticas();
     //getters  setters
 
     public int getId_personaje() {
@@ -57,14 +57,6 @@ public class Personaje {
 
     public void setGenero(String genero) {
         this.genero = genero;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
     }
 
     public String getPersonalidad() {
