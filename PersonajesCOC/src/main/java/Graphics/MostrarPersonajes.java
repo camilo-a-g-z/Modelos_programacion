@@ -5,15 +5,34 @@
  */
 package Graphics;
 
+import Logica.Arquera;
+import Logica.Barbaro;
+import Logica.Duende;
+import Logica.Gigante;
+import Logica.Mago;
+import Logica.Personaje;
+import java.util.ArrayList;
+
 /**
  *
  * @author User
  */
 public class MostrarPersonajes extends javax.swing.JFrame {
 
+    private ArrayList<String> nombres = new ArrayList<String>();
+    private ArrayList<Personaje> personajes = new ArrayList<Personaje>();
+    private String type;
+
     /**
      * Creates new form MostrarPersonajes
      */
+    public MostrarPersonajes(ArrayList nombres, String type) {
+        this.nombres = nombres;
+        this.type = type;
+        iniciarPersonajes();
+        initComponents();
+    }
+
     public MostrarPersonajes() {
         initComponents();
     }
@@ -80,4 +99,35 @@ public class MostrarPersonajes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
+    public void iniciarPersonajes() {
+        switch (type) {
+            case "Barbaro":
+                for (int i = 0; i < nombres.size(); i++) {
+                    personajes.add(new Barbaro(nombres.get(i)));
+                }
+                break;
+            case "Arquera":
+                for (int i = 0; i < nombres.size(); i++) {
+                    personajes.add(new Arquera(nombres.get(i)));
+                }
+                break;
+            case "Duende":
+                for (int i = 0; i < nombres.size(); i++) {
+                    personajes.add(new Duende(nombres.get(i)));
+                }
+                break;
+            case "Gigante":
+                for (int i = 0; i < nombres.size(); i++) {
+                    personajes.add(new Gigante(nombres.get(i)));
+                }
+                break;
+            case "Mago":
+                for (int i = 0; i < nombres.size(); i++) {
+                    personajes.add(new Mago(nombres.get(i)));
+                }
+                break;
+        }
+        System.out.println(personajes.get(0).getGenero());
+    }
+
 }

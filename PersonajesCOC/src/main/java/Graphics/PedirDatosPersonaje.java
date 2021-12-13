@@ -6,6 +6,7 @@
 package Graphics;
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -42,7 +43,7 @@ public class PedirDatosPersonaje extends javax.swing.JFrame {
 
         jLabelBienvenida.setText("Bienvenido, escoja el personaje que desea");
 
-        jComboTipoPersonaje.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Barbaro", "Arquera", "Duende", "Gigante", "Duende" }));
+        jComboTipoPersonaje.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Barbaro", "Arquera", "Duende", "Gigante", "Mago" }));
 
         jLabelCantidad.setText("Ingrese la cantidad de personajes");
 
@@ -132,10 +133,24 @@ public class PedirDatosPersonaje extends javax.swing.JFrame {
 
     private void jButtonAñadirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonAñadirMouseClicked
         
-        if(nombres.size() >= Integer.parseInt((String)jComboCantidad.getSelectedItem())){
-            //en caso de que ya esten todos los nombres
+        if(nombres.size() < Integer.parseInt((String)jComboCantidad.getSelectedItem())){
+            if("".equals(jTextNombre.getText())){
+                JOptionPane.showMessageDialog(null, "Ingrese un nombre");
+            }else{
+                nombres.add(jTextNombre.getText());
+                jTextNombre.setText("");
+                if(nombres.size() < Integer.parseInt((String)jComboCantidad.getSelectedItem())){
+                    jLabelNombre.setText("Ingrese nombre "+(nombres.size()+1));
+                }else{
+                    jTextNombre.setVisible(false);
+                    jLabelNombre.setText("Todos los nombres ingresados");
+                    jButtonAñadir.setText("Enviar");
+                }
+            }
         }else{
-            jLabelNombre.setText("Ingrese nombre "+(nombres.size()+1));
+            jButtonAñadir.setVisible(false);
+            MostrarPersonajes mos = new MostrarPersonajes(nombres,(String)jComboTipoPersonaje.getSelectedItem());
+            mos.setVisible(true);
         }
     }//GEN-LAST:event_jButtonAñadirMouseClicked
 

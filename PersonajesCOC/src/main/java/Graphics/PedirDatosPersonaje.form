@@ -97,7 +97,7 @@
             <StringItem index="1" value="Arquera"/>
             <StringItem index="2" value="Duende"/>
             <StringItem index="3" value="Gigante"/>
-            <StringItem index="4" value="Duende"/>
+            <StringItem index="4" value="Mago"/>
           </StringArray>
         </Property>
       </Properties>
