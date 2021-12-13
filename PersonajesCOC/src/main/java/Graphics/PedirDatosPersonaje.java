@@ -5,17 +5,20 @@
  */
 package Graphics;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author User
  */
 public class PedirDatosPersonaje extends javax.swing.JFrame {
-
+    private ArrayList<String> nombres = new ArrayList<String>();
     /**
      * Creates new form PedirDatosPersonaje
      */
     public PedirDatosPersonaje() {
         initComponents();
+        iniciar_campos();
     }
 
     /**
@@ -44,10 +47,20 @@ public class PedirDatosPersonaje extends javax.swing.JFrame {
         jLabelCantidad.setText("Ingrese la cantidad de personajes");
 
         jComboCantidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4" }));
+        jComboCantidad.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                jComboCantidadItemStateChanged(evt);
+            }
+        });
 
-        jLabelNombre.setText("Ingrese nombre");
+        jLabelNombre.setText("Ingrese nombre 1");
 
         jButtonAñadir.setText("Ingresar Nombre");
+        jButtonAñadir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonAñadirMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -109,6 +122,23 @@ public class PedirDatosPersonaje extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jComboCantidadItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboCantidadItemStateChanged
+        if(jComboCantidad.getSelectedItem()!=null){
+            jButtonAñadir.setVisible(true);
+            jLabelNombre.setVisible(true);
+            jTextNombre.setVisible(true);
+        }
+    }//GEN-LAST:event_jComboCantidadItemStateChanged
+
+    private void jButtonAñadirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonAñadirMouseClicked
+        
+        if(nombres.size() >= Integer.parseInt((String)jComboCantidad.getSelectedItem())){
+            //en caso de que ya esten todos los nombres
+        }else{
+            jLabelNombre.setText("Ingrese nombre "+(nombres.size()+1));
+        }
+    }//GEN-LAST:event_jButtonAñadirMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -153,4 +183,12 @@ public class PedirDatosPersonaje extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelNombre;
     private javax.swing.JTextField jTextNombre;
     // End of variables declaration//GEN-END:variables
+
+    public void iniciar_campos(){
+        jButtonAñadir.setVisible(false);
+        jLabelNombre.setVisible(false);
+        jTextNombre.setVisible(false);
+        jComboCantidad.setSelectedItem(null);
+        System.out.println(nombres.size());
+    }
 }
