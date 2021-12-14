@@ -122,7 +122,5 @@ public class MostrarPersonajes extends javax.swing.JFrame {
                 }
                 break;
         }
-        System.out.println(personajes.get(0).getGenero());
     }
-
 }
