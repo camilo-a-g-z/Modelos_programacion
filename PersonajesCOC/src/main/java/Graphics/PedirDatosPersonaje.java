@@ -117,7 +117,9 @@ public class PedirDatosPersonaje extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    // activa los componentes cuando se selecciona una clase y cantidad de personajes
+ 
     private void jComboCantidadItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboCantidadItemStateChanged
         if(jComboCantidad.getSelectedItem()!=null){
             jButtonAñadir.setVisible(true);
@@ -127,6 +129,7 @@ public class PedirDatosPersonaje extends javax.swing.JFrame {
             jComboCantidad.setEnabled(false);
         }
     }//GEN-LAST:event_jComboCantidadItemStateChanged
+    // hace que atraves boton envie los datos e inicializa la segunda interfaz
 
     private void jButtonAñadirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonAñadirMouseClicked
         
@@ -163,6 +166,7 @@ public class PedirDatosPersonaje extends javax.swing.JFrame {
     private javax.swing.JTextField jTextNombre;
     // End of variables declaration//GEN-END:variables
 
+    // inicia los componentes de la interfaz ocultos
     public void iniciar_campos(){
         jButtonAñadir.setVisible(false);
         jLabelNombre.setVisible(false);

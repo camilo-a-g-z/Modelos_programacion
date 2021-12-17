@@ -23,6 +23,7 @@ public class MostrarPersonajes extends javax.swing.JFrame {
     /**
      * Creates new form MostrarPersonajes
      */
+    // constructor que muestra los personajes creados
     public MostrarPersonajes(ArrayList nombres, String type) {
         this.nombres = nombres;
         this.type = type;
@@ -70,6 +71,8 @@ public class MostrarPersonajes extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
+    
+    // se identifica la clase de personaje solicitado y se inicializan
     public void iniciarPersonajes() {
         switch (type) {
             case "Barbaro":
@@ -100,6 +103,7 @@ public class MostrarPersonajes extends javax.swing.JFrame {
         }
     }
 
+    // se establecen las medidas de la interfaz y se agrega cada personaje
     private void AgregarPersonajes() {
 
         this.setSize(250 * nombres.size(), 600);
