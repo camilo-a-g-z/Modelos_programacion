@@ -9,4 +9,4 @@ Todos los proyectos alojados en este repositorio estan realizados con el IDE Net
 
 # Proyectos
 - [Proyecto 1: Principios de diseño](./Actividad_principios/Docente)
-
+- [Proyecto 2: Personajes con patron de diseño](./PersonajesCOC)
