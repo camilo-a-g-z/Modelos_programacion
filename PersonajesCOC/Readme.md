@@ -1,7 +1,7 @@
 # Personajes con patron de diseño
 En este repositorio se encuentra un código encargado de solicitar al usuario una clase de personaje (barbaro, duende, mago, etc) y una cantidad de éstos que desee crear, a lo que el código devolvera los personajes creados con caracteristicas y estadisticas aleatorias específicas para cada uno de estos con su respectiva imagen.
 
-El patron de diseño utilizado en este proyecto es Factory Method, debido a que se necesita crear objetos de una superclase, pero permitiendo que las subclases cambien el tipo de objeto, en este caso la superclase es personaje, y las subclases lo modifican para que sea del tipo que desee el usuario (barbaro, duende, etc.).
+El patron de diseño utilizado en este proyecto es Factory Method, debido a que se necesita crear objetos de una superclase, pero permitiendo que las subclases cambien caracteristicas del objeto, en este caso la superclase es personaje, y las subclases lo modifican para que sea del tipo que desee el usuario (barbaro, duende, etc.).
 
 En este proyecto no se utilizaron los siguientes patrones:
 1. Abstract Factory, debido a que mezclarlo con el Factory Method podría producir problemas.
