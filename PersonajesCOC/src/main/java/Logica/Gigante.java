@@ -11,6 +11,7 @@ public class Gigante extends Personaje{
         this.arma = randomArma();
         this.est = randomEstadisticas();
         setId_tipo_p(4);
+        InfoEspecifica = "";
     }
     //se genera arma aelatoria
     public Arma randomArma(){

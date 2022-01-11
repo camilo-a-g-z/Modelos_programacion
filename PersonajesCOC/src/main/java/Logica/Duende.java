@@ -12,6 +12,7 @@ public class Duende extends Personaje{
         this.est = randomEstadisticas();
         this.genero = randomGenero();
         setId_tipo_p(3);
+        InfoEspecifica = "";
     }
     //se generan datos aelatorios
     String randomGenero(){

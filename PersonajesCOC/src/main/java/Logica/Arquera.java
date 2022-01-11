@@ -11,6 +11,7 @@ public class Arquera extends Personaje{
         this.arma = randomArma();
         this.est = randomEstadisticas();
         setId_tipo_p(1);
+        InfoEspecifica = "";
     }
     //generador de armas aelatorias
     public Arma randomArma(){

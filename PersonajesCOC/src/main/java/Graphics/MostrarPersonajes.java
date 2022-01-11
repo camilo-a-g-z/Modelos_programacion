@@ -8,7 +8,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author User
+ * @author Camilo Garcia
  */
 public class MostrarPersonajes extends javax.swing.JFrame {
 

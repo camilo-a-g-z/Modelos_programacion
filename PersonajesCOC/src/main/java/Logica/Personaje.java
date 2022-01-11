@@ -12,6 +12,7 @@ public abstract class Personaje {
     protected String personalidad;
     protected Arma arma;
     protected Estadisticas est;
+    protected String InfoEspecifica;
     //constructor por defecto
     public Personaje() {
     }
@@ -26,7 +27,14 @@ public abstract class Personaje {
     public abstract Arma randomArma();
     public abstract Estadisticas randomEstadisticas();
     //getters  setters
+    public String getInfoEspecifica() {
+        return InfoEspecifica;
+    }
 
+    public void setInfoEspecifica(String InfoEspecifica) {
+        this.InfoEspecifica = InfoEspecifica;
+    }
+    
     public int getId_personaje() {
         return id_personaje;
     }

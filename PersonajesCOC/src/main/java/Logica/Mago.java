@@ -12,6 +12,7 @@ public class Mago extends Personaje {
         this.est = randomEstadisticas();
         this.genero = randomGenero();
         setId_tipo_p(5);
+        InfoEspecifica = "";
     }
     //generar genero aelatorio
     String randomGenero(){

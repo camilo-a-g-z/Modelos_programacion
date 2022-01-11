@@ -11,6 +11,7 @@ public class Barbaro extends Personaje{
         this.arma = randomArma();
         this.est = randomEstadisticas();
         setId_tipo_p(2);
+        InfoEspecifica = "";
     }
     //se crea arma aelatoriamente
     public Arma randomArma(){
