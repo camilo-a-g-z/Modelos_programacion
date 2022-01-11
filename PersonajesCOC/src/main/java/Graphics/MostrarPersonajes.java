@@ -70,7 +70,7 @@ public class MostrarPersonajes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
     
-    // se identifica la clase de personaje solicitado y se inicializan
+    // Se crea un objeto de la fabrica de personajes y se retorna un arraylist con todos los personajes creados
     public void iniciarPersonajes() {
         FabricaPersonajes getPersonajes = new FabricaPersonajes(type, nombres);
         personajes = getPersonajes.getPersonajes();

@@ -11,16 +11,17 @@ public class FabricaPersonajes {
     private ArrayList<String> nombres = new ArrayList<String>();
     private ArrayList<Personaje> personajes = new ArrayList<Personaje>();
     private String type;
-
+    //constructor
     public FabricaPersonajes(String type, ArrayList<String> nombres) {
         this.type = type;
         this.nombres = nombres;
     }
+    //metodo para generar y devolver los personajes creados
     public ArrayList<Personaje> getPersonajes(){
         iniciarPersonajes();
         return personajes;
     }
-    
+    //metodo para generar los personajes acorde a los nobres y tipo recibidos
     private void iniciarPersonajes() {
         switch (type) {
             case "Barbaro":
