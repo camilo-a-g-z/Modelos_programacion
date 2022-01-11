@@ -1,10 +1,6 @@
 package Graphics;
 
-import Logica.Arquera;
-import Logica.Barbaro;
-import Logica.Duende;
-import Logica.Gigante;
-import Logica.Mago;
+import Logica.FabricaPersonajes;
 import Logica.Personaje;
 import java.awt.GridLayout;
 import java.util.ArrayList;
@@ -16,17 +12,19 @@ import javax.swing.ImageIcon;
  */
 public class MostrarPersonajes extends javax.swing.JFrame {
 
-    private ArrayList<String> nombres = new ArrayList<String>();
-    private ArrayList<Personaje> personajes = new ArrayList<Personaje>();
+    private ArrayList<String> nombres = new ArrayList<>();
+    private ArrayList<Personaje> personajes = new ArrayList<>();
     private String type;
 
     /**
      * Creates new form MostrarPersonajes
+     * @param nombres
+     * @param type
      */
     // constructor que muestra los personajes creados
     public MostrarPersonajes(ArrayList nombres, String type) {
         this.nombres = nombres;
-        this.type = type;
+        this.type = type;      
         iniciarPersonajes();
         initComponents();
         AgregarPersonajes();
@@ -74,33 +72,8 @@ public class MostrarPersonajes extends javax.swing.JFrame {
     
     // se identifica la clase de personaje solicitado y se inicializan
     public void iniciarPersonajes() {
-        switch (type) {
-            case "Barbaro":
-                for (int i = 0; i < nombres.size(); i++) {
-                    personajes.add(new Barbaro(nombres.get(i)));
-                }
-                break;
-            case "Arquera":
-                for (int i = 0; i < nombres.size(); i++) {
-                    personajes.add(new Arquera(nombres.get(i)));
-                }
-                break;
-            case "Duende":
-                for (int i = 0; i < nombres.size(); i++) {
-                    personajes.add(new Duende(nombres.get(i)));
-                }
-                break;
-            case "Gigante":
-                for (int i = 0; i < nombres.size(); i++) {
-                    personajes.add(new Gigante(nombres.get(i)));
-                }
-                break;
-            case "Mago":
-                for (int i = 0; i < nombres.size(); i++) {
-                    personajes.add(new Mago(nombres.get(i)));
-                }
-                break;
-        }
+        FabricaPersonajes getPersonajes = new FabricaPersonajes(type, nombres);
+        personajes = getPersonajes.getPersonajes();
     }
 
     // se establecen las medidas de la interfaz y se agrega cada personaje
