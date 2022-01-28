@@ -7,12 +7,13 @@ package Logica;
 public class Duende extends Personaje{
     //se crea duende con datos aelatorios
     public Duende(String nombre) {
-        super(nombre, "", "Impulsivo", null, null);
+        super(nombre, "", "Impulsivo", null, null, null);
         this.arma = randomArma();
         this.est = randomEstadisticas();
         this.genero = randomGenero();
         setId_tipo_p(3);
-        InfoEspecifica = "";
+        this.caracteristica = "Pequeños, feos, de piel verde, son picaros y mentirosos, no hacen muchos amigos y andan robando por ahí"
+                                + " , suelen vivir en cuevas feas y deambulan solitarios por todos lados.";
     }
     //se generan datos aelatorios
     String randomGenero(){

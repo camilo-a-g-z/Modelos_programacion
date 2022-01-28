@@ -7,11 +7,12 @@ package Logica;
 public class Barbaro extends Personaje{
     //se crea bararo aelatoriamente
     public Barbaro(String nombre) {
-        super(nombre, "Masculino", "Agresiva", null, null);
+        super(nombre, "Masculino", "Agresiva", null, null, null);
         this.arma = randomArma();
         this.est = randomEstadisticas();
         setId_tipo_p(2);
-        InfoEspecifica = "";
+        this.caracteristica = "Grandes, fuertes y de gran caracter, son buena gente pero muy gritones, les gusta mucho comer carne"
+                                + " y tomar cerveza al brillo de una fogata, viven en chozas de paredes robustas.";
     }
     //se crea arma aelatoriamente
     public Arma randomArma(){

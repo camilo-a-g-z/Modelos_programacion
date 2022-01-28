@@ -79,15 +79,24 @@ public class MostrarPersonajes extends javax.swing.JFrame {
     // se establecen las medidas de la interfaz y se agrega cada personaje
     private void AgregarPersonajes() {
 
-        this.setSize(250 * nombres.size(), 600);
+        this.setSize(250 * nombres.size(), 800);
 
         jLabel1.setLayout(new GridLayout(1, nombres.size()));
+
+        javax.swing.JLabel encabezado = new javax.swing.JLabel();
+        encabezado.setText("<html><body><br>" + personajes.get(0).getCaracteristica() + "</body></html>");
+        
+        
+        jLabel1.add(encabezado);
+
         for (int i = 0; i < nombres.size(); i++) {
             javax.swing.JLabel personaje = new javax.swing.JLabel();
             personaje.setLayout(new GridLayout(2, 1));
             javax.swing.JLabel texto1 = new javax.swing.JLabel();
             javax.swing.JLabel imagen1 = new javax.swing.JLabel();
             ImageIcon imagenPersonaje = new ImageIcon("src/Imagenes/" + this.type + ".png");
+
+            
 
             ImageIcon imagenArma = new ImageIcon("src/Imagenes/" + personajes.get(i).getArma().getNombre() + ".png");
 

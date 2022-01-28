@@ -7,12 +7,13 @@ package Logica;
 public class Mago extends Personaje {
     //constructor de mago con datos aelatorios
     public Mago(String nombre) {
-        super(nombre, "", "Egocenrtico", null, null);
+        super(nombre, "", "Egocenrtico", null, null, null);
         this.arma = randomArma();
         this.est = randomEstadisticas();
         this.genero = randomGenero();
         setId_tipo_p(5);
-        InfoEspecifica = "";
+        this.caracteristica = "Arrogantes y antipaticos, no les gusta hacer amigos y de mal caracter, siempre miran por encima del hombro"
+                                + " y dicen que su poder es el mejor, viven en casas lujosas y con techos muy altos.";
     }
     //generar genero aelatorio
     String randomGenero(){

@@ -7,11 +7,12 @@ package Logica;
 public class Gigante extends Personaje{
     //se genera gigante con datos aelatorios
     public Gigante(String nombre) {
-        super(nombre, "Masculino", "Noble", null, null);
+        super(nombre, "Masculino", "Noble", null, null, null);
         this.arma = randomArma();
         this.est = randomEstadisticas();
         setId_tipo_p(4);
-        InfoEspecifica = "";
+        this.caracteristica = "Enormes, piel clara y poco cabello, son muy amigables pero intimidan por su gran tamaño, sin embargo"
+                                + " tienen un gran sentido de la justicia, viven en zonas muy verdes y les gusta la naturaleza.";
     }
     //se genera arma aelatoria
     public Arma randomArma(){

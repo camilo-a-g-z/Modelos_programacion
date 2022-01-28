@@ -12,28 +12,22 @@ public abstract class Personaje {
     protected String personalidad;
     protected Arma arma;
     protected Estadisticas est;
-    protected String InfoEspecifica;
+    protected String caracteristica;
     //constructor por defecto
     public Personaje() {
     }
     //constructor para ingresar datos manualmente
-    public Personaje(String nombre, String genero, String personalidad, Arma arma, Estadisticas est) {
+    public Personaje(String nombre, String genero, String personalidad, Arma arma, Estadisticas est, String caracteristica) {
         this.nombre = nombre;
         this.genero = genero;
         this.personalidad = personalidad;
         this.arma = arma;
         this.est = est;
+        this.caracteristica = caracteristica;
     }
     public abstract Arma randomArma();
     public abstract Estadisticas randomEstadisticas();
     //getters  setters
-    public String getInfoEspecifica() {
-        return InfoEspecifica;
-    }
-
-    public void setInfoEspecifica(String InfoEspecifica) {
-        this.InfoEspecifica = InfoEspecifica;
-    }
     
     public int getId_personaje() {
         return id_personaje;
@@ -89,5 +83,13 @@ public abstract class Personaje {
 
     public void setEst(Estadisticas est) {
         this.est = est;
+    }
+
+    public String getCaracteristica() {
+        return caracteristica;
+    }
+
+    public void setCaracteristica(String caracteristica) {
+        this.caracteristica = caracteristica;
     }
 }
