@@ -79,13 +79,13 @@ public class MostrarPersonajes extends javax.swing.JFrame {
     // se establecen las medidas de la interfaz y se agrega cada personaje
     private void AgregarPersonajes() {
 
-        this.setSize(250 * nombres.size(), 800);
+        this.setSize(250 *(nombres.size()+1), 600);
 
         jLabel1.setLayout(new GridLayout(1, nombres.size()));
 
         javax.swing.JLabel encabezado = new javax.swing.JLabel();
-        encabezado.setText("<html><body><br>" + personajes.get(0).getCaracteristica() + "</body></html>");
-        
+
+        encabezado.setText("<html><body align = 'center'><br>" + "CARACTERISTICAS ESPECIFICAS <br><br>" + personajes.get(0).getCaracteristica() + "</body></html>");
         
         jLabel1.add(encabezado);
 
