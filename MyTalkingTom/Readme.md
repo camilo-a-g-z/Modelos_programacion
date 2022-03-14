@@ -3,4 +3,4 @@ Ejemplo con My Talking Tom
 
 **Diagrama de clases**
 
-![Diagrama de clases](UML MTT.png)
+![Diagrama de clases](UML_MTT.png)
